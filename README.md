@@ -16,5 +16,6 @@ Tomar en cuenta que todas las indicaciones son para Sistema Operativo Windows.
         "host": "URLBaseDeDatos",
         "dialect": "mysql"
       }
-4. Desde la raiz, abrir terminal y correr con "npm run dev"
-5. Desde otra terminal correr el comando "sequelize db:seed:all"
+4. Desde la terminal en la raiz correr el comando "sequelize db:seed:all"
+5. El servidor de mysql debe estar activo en su puerto 3306
+6. Desde la raiz, abrir terminal y correr con "npm run dev"

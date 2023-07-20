@@ -1,6 +1,7 @@
 import Semestre from "../models/semestre.model.js";
 
 export const create = (req, res) => {
+  let date = new Date();
   console.log("create Semestre", req.body);
   const {
     body: { semestre },
@@ -13,6 +14,8 @@ export const create = (req, res) => {
   }
   const semestres = {
     nombre: semestre,
+    createdAt: date,
+    updatedAt: date,
   };
   Semestre.create(semestres)
     .then((data) => {

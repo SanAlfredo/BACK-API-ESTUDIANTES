@@ -38,12 +38,11 @@ export const create = (req, res) => {
     });
     return;
   }
-  upload.single("file");
   const estudiantes = {
     nombre,
     nacimiento,
     carnet,
-    foto: "./upload/" + nombreNuevo,
+    foto,
     createdAt: date,
     updatedAt: date,
   };

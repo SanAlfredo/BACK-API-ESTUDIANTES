@@ -12,7 +12,7 @@ const Estudiante = conn.define("estudiantes", {
     type: DataTypes.STRING(200),
   },
   nacimiento: {
-    type: DataTypes.DATE,
+    type: DataTypes.DATEONLY,
   },
   carnet: {
     type: DataTypes.INTEGER,

@@ -3,7 +3,7 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     let date = new Date();
-    let datos = [["Alfredo Valverde Aranibar","1689804958829.jpg"], ["Jhonny Aguilera Farfan","1689815604910.jpg"]];
+    let datos = [["Alfredo Valverde Aranibar","1689804958829.jpg"], ["Jhonny Aguilera Farfan","1689898282815.jpg"]];
     let data = [];
     datos.forEach(function (elemento, indice, array) {
       data.push({

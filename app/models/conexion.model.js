@@ -14,3 +14,5 @@ conn
     console.log("Sync database success full");
   })
   .catch((error) => console.error("Some Error: ", error));
+
+  export const Op= Sequelize.Op;

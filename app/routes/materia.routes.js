@@ -6,8 +6,5 @@ const materias = Router();
 materias.post("/materias", create);
 materias.get("/materias", list);
 materias.get("/materias/todo",listTot);
-// categorias.get("/categorias/:id", detail);
-// categorias.put("/categorias/:id", update);
-// categorias.delete("/categorias/:id", borrar);
 
 export default materias;

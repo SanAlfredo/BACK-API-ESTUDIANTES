@@ -4,6 +4,9 @@ import {
   list,
   createImage,
   obtenerImagen,
+  borrarImage,
+  detail,
+  update,
 } from "../controllers/estudiante.controller.js";
 import multer from "multer";
 
@@ -23,10 +26,11 @@ const estudiantes = Router();
 
 estudiantes.post("/estudiantes", create);
 estudiantes.post("/estudiantes/foto", upload.single("file"), createImage);
+estudiantes.delete("/estudiantes/foto/:path", borrarImage);
 estudiantes.get("/estudiantes", list);
+estudiantes.get("/estudiantes/:id", detail);
 estudiantes.get("/estudiantes/foto/:path", obtenerImagen);
-// categorias.get("/categorias/:id", detail);
-// categorias.put("/categorias/:id", update);
+estudiantes.patch("/estudiantes/:id", update);
 // categorias.delete("/categorias/:id", borrar);
 
 export default estudiantes;

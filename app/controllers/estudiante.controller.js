@@ -212,7 +212,7 @@ export const buscar2 = (req, res) => {
   console.log("buscar estudiantes por materia", req.params);
   Materia.findAll({
     where: {
-      nombre: req.params.valor,
+      id: req.params.valor,
     },
     include: {
       model: Estudiante,
@@ -235,7 +235,7 @@ export const buscar3 = (req, res) => {
   console.log("buscar estudiante por nombre y materia", req.params);
   Materia.findAll({
     where: {
-      nombre: req.params.valor2,
+      id: req.params.valor2,
     },
     include: {
       model: Estudiante,
